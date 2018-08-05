@@ -18,5 +18,5 @@ end
 def take_a_number(customers, new_customer)
   customers.push(new_customer)
   assigned_customers = customers.count
-  puts "Welcome #{customers.last}. You are number #{assigned_customers} in line."
+  puts "Welcome, #{customers.last}. You are number #{assigned_customers} in line."
 end
