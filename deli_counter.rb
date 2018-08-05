@@ -20,3 +20,12 @@ def take_a_number(customers, new_customer)
   assigned_customers = customers.count
   puts "Welcome, #{customers.last}. You are number #{assigned_customers} in line."
 end
+
+def now_serving(customers)
+  if customers.count != 0
+    puts "Now serving #{customers[0]}!"
+    customers.shift
+  else customers.count == 0
+    puts "There is nobody waiting to be served!"
+  end
+end
