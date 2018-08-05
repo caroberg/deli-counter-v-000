@@ -22,12 +22,11 @@ def take_a_number(customers, new_customer)
 end
 
 def now_serving(customers)
-  if customers.count == 0
-    puts "There is nobody waiting to be served!"
-  else
+  if
     while customers.count != 0
       puts "Currently serving #{customers[0]}."
       customers.shift
-      end
+    end
   end
+    puts "There is nobody waiting to be served!"
 end
