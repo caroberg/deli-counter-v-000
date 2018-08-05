@@ -18,5 +18,5 @@ end
 def take_a_number(customers, new_customer)
   customers.push(new_customer)
   assigned_customers = customers.count
-  return "#{customers.last} is #{assigned_customers} in line"
+  return "#{customers.last} is number #{assigned_customers} in line."
 end
